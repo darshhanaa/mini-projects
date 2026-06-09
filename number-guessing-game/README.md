@@ -2,10 +2,10 @@
 
 A simple game where the user tries to guess a randomly generated number.
 
-## Planned Features
+## Features
 - Random number generation
-- User input
-- Hint system (higher/lower)
+- Higher/Lower hints
 - Attempt counter
 
-Status: In Development
+## Language
+- C
