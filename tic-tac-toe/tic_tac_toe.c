@@ -39,8 +39,13 @@ int main() {
 
     printf("\nPlayer X, enter position (1-9): ");
     scanf("%d", &position);
-
     makeMove(position, 'X');
+
+    displayBoard();
+
+    printf("\nPlayer O, enter position (1-9): ");
+    scanf("%d", &position);
+    makeMove(position, 'O');
 
     printf("\nUpdated Board:\n");
     displayBoard();
