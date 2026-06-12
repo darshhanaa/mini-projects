@@ -32,7 +32,32 @@ void makeMove(int position, char player) {
     else if(position == 9) board[2][2] = player;
 }
 
+int checkWinner() {
+
+    for(int i = 0; i < 3; i++) {
+
+        if(board[i][0] == board[i][1] &&
+           board[i][1] == board[i][2])
+            return 1;
+
+        if(board[0][i] == board[1][i] &&
+           board[1][i] == board[2][i])
+            return 1;
+    }
+
+    if(board[0][0] == board[1][1] &&
+       board[1][1] == board[2][2])
+        return 1;
+
+    if(board[0][2] == board[1][1] &&
+       board[1][1] == board[2][0])
+        return 1;
+
+    return 0;
+}
+
 int main() {
+
     int position;
 
     displayBoard();
@@ -43,12 +68,21 @@ int main() {
 
     displayBoard();
 
+    if(checkWinner()) {
+        printf("\nPlayer X Wins!\n");
+        return 0;
+    }
+
     printf("\nPlayer O, enter position (1-9): ");
     scanf("%d", &position);
     makeMove(position, 'O');
 
-    printf("\nUpdated Board:\n");
     displayBoard();
+
+    if(checkWinner()) {
+        printf("\nPlayer O Wins!\n");
+        return 0;
+    }
 
     return 0;
 }
