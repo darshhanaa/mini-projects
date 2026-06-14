@@ -20,16 +20,23 @@ void displayBoard() {
     }
 }
 
-void makeMove(int position, char player) {
-    if(position == 1) board[0][0] = player;
-    else if(position == 2) board[0][1] = player;
-    else if(position == 3) board[0][2] = player;
-    else if(position == 4) board[1][0] = player;
-    else if(position == 5) board[1][1] = player;
-    else if(position == 6) board[1][2] = player;
-    else if(position == 7) board[2][0] = player;
-    else if(position == 8) board[2][1] = player;
-    else if(position == 9) board[2][2] = player;
+int makeMove(int position, char player) {
+
+    if(position < 1 || position > 9) {
+        printf("Invalid position!\n");
+        return 0;
+    }
+
+    int row = (position - 1) / 3;
+    int col = (position - 1) % 3;
+
+    if(board[row][col] == 'X' || board[row][col] == 'O') {
+        printf("Position already taken!\n");
+        return 0;
+    }
+
+    board[row][col] = player;
+    return 1;
 }
 
 int checkWinner() {
@@ -64,7 +71,9 @@ int main() {
 
     printf("\nPlayer X, enter position (1-9): ");
     scanf("%d", &position);
-    makeMove(position, 'X');
+
+    if(!makeMove(position, 'X'))
+        return 0;
 
     displayBoard();
 
@@ -75,7 +84,9 @@ int main() {
 
     printf("\nPlayer O, enter position (1-9): ");
     scanf("%d", &position);
-    makeMove(position, 'O');
+
+    if(!makeMove(position, 'O'))
+        return 0;
 
     displayBoard();
 
