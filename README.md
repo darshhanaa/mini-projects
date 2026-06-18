@@ -43,6 +43,9 @@ A collection of small projects built while learning programming and problem-solv
 - Basic Data Management
 
 ---
+## 🎯 Purpose
+
+This repository is part of my learning journey to strengthen programming fundamentals through hands-on projects and continuous practice.
 
 
 
