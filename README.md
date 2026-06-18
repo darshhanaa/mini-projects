@@ -48,6 +48,16 @@ A collection of small projects built while learning programming and problem-solv
 This repository is part of my learning journey to strengthen programming fundamentals through hands-on projects and continuous practice.
 
 
+---
+
+## 🚀 Future Projects
+
+- To-Do List
+- Student Management System
+- Expense Tracker
+- Library Management System
+- Banking System
+- Inventory Management System
 
 ---
 
