@@ -1,21 +1,27 @@
-# Mini Projects
+# Mini Projects Collection
 
-A collection of small programming projects built while learning software engineering, problem solving, and software development practices.
+A collection of small projects built while learning programming and problem-solving. These projects are implemented using different languages and concepts as part of my learning journey.
 
-## Current Projects
-- Calculator (Coming Soon)
+---
 
-## Planned Projects
-- Number Guessing Game
-- Tic Tac Toe
-- Password Generator
-- Quiz Game
+## 📂 Projects
 
-## Tech Stack
-- C
-- C++
-- Git
-- GitHub
+| Project | Language | Status |
+|-----------|----------|---------|
+| Calculator | C | ✅ |
+| Number Guessing Game | C | ✅ |
+| Tic Tac Toe | C | ✅ |
+| Quiz Game | Python | ✅ |
+| Password Generator | Python | ✅ |
+| Rock Paper Scissors | Python | ✅ |
+| Contact Book | Python | ✅ |
+| To-Do List | - | ⏳ |
+| Student Management System | - | ⏳ |
+| Expense Tracker | - | ⏳ |
+| Library Management System | - | ⏳ |
 
-## Author
-Darshana Ghodasaini
+
+
+---
+
+### Learning by building 🚀
