@@ -20,6 +20,30 @@ A collection of small projects built while learning programming and problem-solv
 | Expense Tracker | - | ⏳ |
 | Library Management System | - | ⏳ |
 
+---
+
+## 🛠 Technologies Used
+
+- C
+- Python
+
+---
+
+## 📚 Concepts Practiced
+
+- Input / Output
+- Functions
+- Loops
+- Conditional Statements
+- Arrays
+- Strings
+- Lists
+- Dictionaries
+- Randomization
+- Basic Data Management
+
+---
+
 
 
 ---
